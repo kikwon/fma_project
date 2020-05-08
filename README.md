@@ -1,4 +1,4 @@
-# fma_project
+# FMA Project: Genre Classification and Popularity Regression
 
 data source: http://archive.ics.uci.edu/ml/datasets/FMA%3A+A+Dataset+For+Music+Analysis#
 
