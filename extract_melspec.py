@@ -45,8 +45,8 @@ def main(path):
 
 
 if __name__ == "__main__":
-    mfcc = main(sys.argv[1])
+    mel_spec = main(sys.argv[1])
     
-    with open('mfcc.pkl', 'wb') as fp:
-        pickle.dump(mfcc, fp)
+    with open('mel-spec.pkl', 'wb') as fp:
+        pickle.dump(mel_spec, fp)
 
