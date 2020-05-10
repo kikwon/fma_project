@@ -35,7 +35,8 @@ def main(path):
         for mp3 in tqdm(filenames):
             try:
                 data, sampling_rate = librosa.load(mp3, mono=True)
-                mel_spec = librosa.feature.melspectrogram(y=data, sr=sampling_rate)
+                mel_spec = librosa.feature.melspectrogram(y=data, sr=sampling_rate, n_fft=2048, hop_length=512)
+                mel_spec = librosa.power_to_db(mel_spec, ref=np.max)
                 mel_spec_data.append(mel_spec)
             except Exception as e:
                 print(e)
