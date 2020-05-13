@@ -35,7 +35,8 @@ def main(path):
         for mp3 in tqdm(filenames):
             try:
                 data, sampling_rate = librosa.load(mp3, mono=True)
-                mel_spec = librosa.feature.melspectrogram(y=data, sr=sampling_rate)
+                mel_spec = librosa.feature.melspectrogram(y=data, sr=sampling_rate, n_fft=2048, hop_length=1024)
+                mel_spec = librosa.power_to_db(mel_spec, ref=np.max)
                 mel_spec_data.append(mel_spec)
             except Exception as e:
                 print(e)
@@ -45,8 +46,8 @@ def main(path):
 
 
 if __name__ == "__main__":
-    mfcc = main(sys.argv[1])
+    mel_spec = main(sys.argv[1])
     
-    with open('mfcc.pkl', 'wb') as fp:
-        pickle.dump(mfcc, fp)
+    with open('mel-spec.pkl', 'wb') as fp:
+        pickle.dump(mel_spec, fp)
 
