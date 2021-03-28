@@ -3,12 +3,11 @@
 ## Intro
 This project will be an application-oriented project with two potential tasks.  One will be to see how well we can classify the genre of a song given the audio file.  The second task will be a prediction of the popularity of a song using a regression based on the audio files.
 
+Proposal: https://github.com/kikwon/fma_project/blob/master/Proposal.pdf
+
 ## References
 data source: http://archive.ics.uci.edu/ml/datasets/FMA%3A+A+Dataset+For+Music+Analysis#
-
 FMA dataset Research Paper: https://arxiv.org/pdf/1612.01840.pdf
-
-Proposal: https://github.com/kikwon/fma_project/blob/master/Proposal.pdf
 
 ## Packages
 * pandas
