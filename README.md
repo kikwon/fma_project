@@ -5,10 +5,6 @@ This project will be an application-oriented project with two potential tasks.  
 
 Proposal: https://github.com/kikwon/fma_project/blob/master/Proposal.pdf
 
-## References
-* data source: http://archive.ics.uci.edu/ml/datasets/FMA%3A+A+Dataset+For+Music+Analysis#
-* FMA dataset Research Paper: https://arxiv.org/pdf/1612.01840.pdf
-
 ## Packages
 * pandas
 * numpy
@@ -25,6 +21,10 @@ Proposal: https://github.com/kikwon/fma_project/blob/master/Proposal.pdf
 * Confusion Matrix
 * Accuracy and F1
 * ROC Curve and AUC
+
+## References
+* data source: http://archive.ics.uci.edu/ml/datasets/FMA%3A+A+Dataset+For+Music+Analysis#
+* FMA dataset Research Paper: https://arxiv.org/pdf/1612.01840.pdf
 
 ### Script extract_mfcc.py guide:  
 The mfcc features that come with features.csv are different from what we get when we extract the mfcc from audio directly. This script will extract mfcc features (1 form of spectrogram) for some window of the audio (1-2 minutes). It will output a pickled list of mfcc features ('mfcc.pkl') in the same directory. You can import this pickle later in notebook. Some code to process to get it ready for the neural network training is included in 'Basic_arch_mfcc_from_features_csv.ipynb' in the 'from audio' section. This script runs for 2 hours. I used discrete cosine transform type 3 for more contrast (read up Librosa's documentations for further info).
