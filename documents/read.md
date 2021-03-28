@@ -1,3 +1,3 @@
-Proposal
-Presentation Slides
-Final Paper
+* Proposal
+* Presentation Slides
+* Final Paper
