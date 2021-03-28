@@ -6,8 +6,8 @@ This project will be an application-oriented project with two potential tasks.  
 Proposal: https://github.com/kikwon/fma_project/blob/master/Proposal.pdf
 
 ## References
-data source: http://archive.ics.uci.edu/ml/datasets/FMA%3A+A+Dataset+For+Music+Analysis#
-FMA dataset Research Paper: https://arxiv.org/pdf/1612.01840.pdf
+* data source: http://archive.ics.uci.edu/ml/datasets/FMA%3A+A+Dataset+For+Music+Analysis#
+* FMA dataset Research Paper: https://arxiv.org/pdf/1612.01840.pdf
 
 ## Packages
 * pandas
